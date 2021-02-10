@@ -34,6 +34,11 @@ app.get('/comments/new', (req, res) => {
     res.render('comments/new');
 })
 
+app.post('/comments', (req, res) => {
+    console.log(req.body);
+    res.send("IT WORKED");
+})
+
 app.get('/drinks', (req, res) => {
     res.send("GET /drinks response")
 })
