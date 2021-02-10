@@ -30,6 +30,10 @@ app.get('/comments', (req, res) => {
     res.render('comments/index', { comments })
 })
 
+app.get('/comments/new', (req, res) => {
+    res.render('comments/new');
+})
+
 app.get('/drinks', (req, res) => {
     res.send("GET /drinks response")
 })
